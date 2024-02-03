@@ -1,0 +1,294 @@
+/** @format */
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+@font-face {
+  font-family: "WarhavenB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/WarhavenB.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Pretendard Variable";
+  color: #323232;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.crew-bodyspec {
+  font-family: "Red Hat Display", sans-serif;
+  color: #888888;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .crew-bodyspec {
+    font-size: 17px;
+  }
+}
+
+.crew-nickname {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .crew-nickname {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  .br-mobile {
+    display: none;
+  }
+}
+/** @format */
+.sp-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  min-width: 320px;
+  margin: auto;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+}
+
+.sp-slide {
+  position: relative;
+}
+.sp-slide .sp-slide-dimmed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.sp-slide .sp-slide-list {
+  display: flex;
+}
+.sp-slide .sp-slide-list img {
+  display: block;
+  width: 100%;
+}
+
+#sp-crew-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-7deg);
+  width: 80%;
+  max-width: 480px;
+}
+
+.sp-crew-slide {
+  position: relative;
+}
+.sp-crew-slide img {
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+  display: block;
+  z-index: 15;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+.sp-crew-slide .sp-crew-dimmed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.88);
+  z-index: 10;
+}
+
+#sp-crew-1 {
+  background-image: url("../imgs/crew1/crew1-1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sp-crew-2 {
+  background-image: url("../imgs/crew3/crew3-1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sp-crew-3 {
+  background-image: url("../imgs/crew2/crew2-1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sp-crew-4 {
+  background-image: url("../imgs/crew4/crew4-1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sp-crew-5 {
+  background-image: url("../imgs/crew5/crew5-1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sp-crew-6 {
+  background-image: url("../imgs/crew6/crew6-1-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sp-desc {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .sp-desc {
+    padding: 64px 24px;
+  }
+}
+.sp-desc h2 {
+  font-family: "WarhavenB";
+  font-size: 20px;
+  text-align: center;
+  line-height: 160%;
+}
+@media (min-width: 768px) {
+  .sp-desc h2 {
+    font-size: 40px;
+  }
+}
+.sp-desc p {
+  line-height: 150%;
+  text-align: center;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .sp-desc p {
+    font-size: 22px;
+  }
+}
+
+.sp-crew-wrapper {
+  padding-bottom: 16px;
+}
+
+.sp-crew {
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .sp-crew {
+    padding-bottom: 32px;
+  }
+}
+
+.sp-crew-comments {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.sp-crew-comments * {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .sp-crew-comments {
+    padding: 32px 16px;
+  }
+}
+.sp-crew-comments .crew-cmt {
+  line-height: 150%;
+  font-size: 15px;
+  font-family: "Nanum Myeongjo", serif;
+}
+@media (min-width: 768px) {
+  .sp-crew-comments .crew-cmt {
+    font-size: 20px;
+  }
+}
+
+.sp-crew-items-wrap {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 16px;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .sp-crew-items-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .sp-crew-items-wrap .sp-crew-item-img {
+    width: 100%;
+  }
+}
+
+.sp-crew-item:hover * {
+  opacity: 0.7;
+}
+
+.sp-crew-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media (min-width: 768px) {
+  .sp-crew-item-info * {
+    font-size: 17px;
+  }
+}
+
+.sp-crew-item-img {
+  width: 172px;
+}
+@media (min-width: 768px) {
+  .sp-crew-item-img {
+    margin-bottom: 8px;
+  }
+}
+
+.sp-crew-item-name {
+  line-height: 140%;
+}
+
+.sp-crew-item-original-price {
+  color: #888888;
+  text-decoration: line-through;
+}
+
+.sp-crew-item-current-price {
+  color: #000;
+  font-weight: 700;
+}
+
+.sp-crew-item-discount-rate {
+  color: red;
+  font-weight: 700;
+}
