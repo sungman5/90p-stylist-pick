@@ -115,42 +115,42 @@ body {
 }
 
 #sp-crew-1 {
-  background-image: url("../imgs/crew1/crew1-1-mobile.jpg");
+  background-image: url("./imgs/crew1/crew1-1-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #sp-crew-2 {
-  background-image: url("../imgs/crew3/crew3-1-mobile.jpg");
+  background-image: url("./imgs/crew3/crew3-1-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #sp-crew-3 {
-  background-image: url("../imgs/crew2/crew2-1-mobile.jpg");
+  background-image: url("./imgs/crew2/crew2-1-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #sp-crew-4 {
-  background-image: url("../imgs/crew4/crew4-1-mobile.jpg");
+  background-image: url("./imgs/crew4/crew4-1-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #sp-crew-5 {
-  background-image: url("../imgs/crew5/crew5-1-mobile.jpg");
+  background-image: url("./imgs/crew5/crew5-1-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #sp-crew-6 {
-  background-image: url("../imgs/crew6/crew6-1-mobile.jpg");
+  background-image: url("./imgs/crew6/crew6-1-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
