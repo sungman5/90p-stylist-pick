@@ -92,7 +92,7 @@ body {
 .sp-crew-slide {
   position: relative;
 }
-.sp-crew-slide img {
+.sp-crew-slide img, .sp-crew-slide video {
   width: 100%;
   max-width: 640px;
   margin: auto;
@@ -103,6 +103,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
   transition: all 1s;
+}
+.sp-crew-slide video {
+  aspect-ratio: 2/3;
+  object-fit: cover;
 }
 .sp-crew-slide .sp-crew-dimmed {
   position: absolute;
