@@ -26,7 +26,6 @@ const crewImageSample = document.getElementById("crew-slide-sample");
 
 function setCrewSlideHeight() {
   crewImageSampleHeight = crewImageSample.clientHeight;
-  console.log(crewImageSampleHeight);
   for (let i = 0; i < spCrewSlideHeight.length; i++) {
     spCrewSlideHeight[i].style.height = `${crewImageSampleHeight}px`;
   }
@@ -54,21 +53,19 @@ function crew_1_Slide() {
   }
 
   function setupVideoEndListener(videoElement) {
-    // 비디오 재생이 끝나면 호출될 함수를 한 번만 등록합니다.
     videoElement.onended =
       videoElement.onended ||
       (() => {
-        console.log("비디오 끝!");
         slideNum++;
-        playSlide(); // 비디오 재생이 끝나면 다음 슬라이드로 넘어갑니다.
+        playSlide();
       });
   }
 
   function playSlide() {
-    clearTimeout(slideTimeout); // 이전에 설정된 타이머가 있으면 취소합니다.
+    clearTimeout(slideTimeout);
     hiddenAllItems();
 
-    let delay = 2000; // 기본 지연 시간 설정
+    let delay = 2000;
 
     if (slideNum === 0) {
       firstSlideItem.style.opacity = 1;
@@ -76,19 +73,18 @@ function crew_1_Slide() {
     } else if (slideNum === 1) {
       secondSlideItem.style.opacity = 1;
       if (secondSlideItem.tagName === "VIDEO") {
-        setupVideoEndListener(secondSlideItem); // 비디오에 대한 종료 이벤트 리스너 설정
+        setupVideoEndListener(secondSlideItem);
         secondSlideItem.play();
-        console.log("비디오 시작!");
-        return; // 비디오가 재생되는 동안 다음 슬라이드로 자동으로 넘어가지 않도록 합니다.
+
+        return;
       } else {
         slideNum++;
       }
     } else if (slideNum === 2) {
       thirdSlideItem.style.opacity = 1;
-      slideNum = 0; // 마지막 슬라이드 이후 첫 번째 슬라이드로 돌아갑니다.
+      slideNum = 0;
     }
 
-    // 다음 슬라이드로 넘어가기 전에 설정한 지연 시간 후에 playSlide 함수를 다시 호출합니다.
     slideTimeout = setTimeout(playSlide, delay);
   }
 
@@ -110,21 +106,19 @@ function crew_2_Slide() {
   }
 
   function setupVideoEndListener(videoElement) {
-    // 비디오 재생이 끝나면 호출될 함수를 한 번만 등록합니다.
     videoElement.onended =
       videoElement.onended ||
       (() => {
-        console.log("비디오 끝!");
         slideNum++;
-        playSlide(); // 비디오 재생이 끝나면 다음 슬라이드로 넘어갑니다.
+        playSlide();
       });
   }
 
   function playSlide() {
-    clearTimeout(slideTimeout); // 이전에 설정된 타이머가 있으면 취소합니다.
+    clearTimeout(slideTimeout);
     hiddenAllItems();
 
-    let delay = 2000; // 기본 지연 시간 설정
+    let delay = 2000;
 
     if (slideNum === 0) {
       firstSlideItem.style.opacity = 1;
@@ -132,19 +126,18 @@ function crew_2_Slide() {
     } else if (slideNum === 1) {
       secondSlideItem.style.opacity = 1;
       if (secondSlideItem.tagName === "VIDEO") {
-        setupVideoEndListener(secondSlideItem); // 비디오에 대한 종료 이벤트 리스너 설정
+        setupVideoEndListener(secondSlideItem);
         secondSlideItem.play();
-        console.log("비디오 시작!");
-        return; // 비디오가 재생되는 동안 다음 슬라이드로 자동으로 넘어가지 않도록 합니다.
+
+        return;
       } else {
         slideNum++;
       }
     } else if (slideNum === 2) {
       thirdSlideItem.style.opacity = 1;
-      slideNum = 0; // 마지막 슬라이드 이후 첫 번째 슬라이드로 돌아갑니다.
+      slideNum = 0;
     }
 
-    // 다음 슬라이드로 넘어가기 전에 설정한 지연 시간 후에 playSlide 함수를 다시 호출합니다.
     slideTimeout = setTimeout(playSlide, delay);
   }
 
@@ -165,21 +158,19 @@ function crew_3_Slide() {
   }
 
   function setupVideoEndListener(videoElement) {
-    // 비디오 재생이 끝나면 호출될 함수를 한 번만 등록합니다.
     videoElement.onended =
       videoElement.onended ||
       (() => {
-        console.log("비디오 끝!");
         slideNum++;
-        playSlide(); // 비디오 재생이 끝나면 다음 슬라이드로 넘어갑니다.
+        playSlide();
       });
   }
 
   function playSlide() {
-    clearTimeout(slideTimeout); // 이전에 설정된 타이머가 있으면 취소합니다.
+    clearTimeout(slideTimeout);
     hiddenAllItems();
 
-    let delay = 2000; // 기본 지연 시간 설정
+    let delay = 2000;
 
     if (slideNum === 0) {
       firstSlideItem.style.opacity = 1;
@@ -187,19 +178,18 @@ function crew_3_Slide() {
     } else if (slideNum === 1) {
       secondSlideItem.style.opacity = 1;
       if (secondSlideItem.tagName === "VIDEO") {
-        setupVideoEndListener(secondSlideItem); // 비디오에 대한 종료 이벤트 리스너 설정
+        setupVideoEndListener(secondSlideItem);
         secondSlideItem.play();
-        console.log("비디오 시작!");
-        return; // 비디오가 재생되는 동안 다음 슬라이드로 자동으로 넘어가지 않도록 합니다.
+
+        return;
       } else {
         slideNum++;
       }
     } else if (slideNum === 2) {
       thirdSlideItem.style.opacity = 1;
-      slideNum = 0; // 마지막 슬라이드 이후 첫 번째 슬라이드로 돌아갑니다.
+      slideNum = 0;
     }
 
-    // 다음 슬라이드로 넘어가기 전에 설정한 지연 시간 후에 playSlide 함수를 다시 호출합니다.
     slideTimeout = setTimeout(playSlide, delay);
   }
 
@@ -221,21 +211,19 @@ function crew_4_Slide() {
   }
 
   function setupVideoEndListener(videoElement) {
-    // 비디오 재생이 끝나면 호출될 함수를 한 번만 등록합니다.
     videoElement.onended =
       videoElement.onended ||
       (() => {
-        console.log("비디오 끝!");
         slideNum++;
-        playSlide(); // 비디오 재생이 끝나면 다음 슬라이드로 넘어갑니다.
+        playSlide();
       });
   }
 
   function playSlide() {
-    clearTimeout(slideTimeout); // 이전에 설정된 타이머가 있으면 취소합니다.
+    clearTimeout(slideTimeout);
     hiddenAllItems();
 
-    let delay = 2000; // 기본 지연 시간 설정
+    let delay = 2000;
 
     if (slideNum === 0) {
       firstSlideItem.style.opacity = 1;
@@ -243,19 +231,18 @@ function crew_4_Slide() {
     } else if (slideNum === 1) {
       secondSlideItem.style.opacity = 1;
       if (secondSlideItem.tagName === "VIDEO") {
-        setupVideoEndListener(secondSlideItem); // 비디오에 대한 종료 이벤트 리스너 설정
+        setupVideoEndListener(secondSlideItem);
         secondSlideItem.play();
-        console.log("비디오 시작!");
-        return; // 비디오가 재생되는 동안 다음 슬라이드로 자동으로 넘어가지 않도록 합니다.
+
+        return;
       } else {
         slideNum++;
       }
     } else if (slideNum === 2) {
       thirdSlideItem.style.opacity = 1;
-      slideNum = 0; // 마지막 슬라이드 이후 첫 번째 슬라이드로 돌아갑니다.
+      slideNum = 0;
     }
 
-    // 다음 슬라이드로 넘어가기 전에 설정한 지연 시간 후에 playSlide 함수를 다시 호출합니다.
     slideTimeout = setTimeout(playSlide, delay);
   }
 
@@ -277,21 +264,19 @@ function crew_5_Slide() {
   }
 
   function setupVideoEndListener(videoElement) {
-    // 비디오 재생이 끝나면 호출될 함수를 한 번만 등록합니다.
     videoElement.onended =
       videoElement.onended ||
       (() => {
-        console.log("비디오 끝!");
         slideNum++;
-        playSlide(); // 비디오 재생이 끝나면 다음 슬라이드로 넘어갑니다.
+        playSlide();
       });
   }
 
   function playSlide() {
-    clearTimeout(slideTimeout); // 이전에 설정된 타이머가 있으면 취소합니다.
+    clearTimeout(slideTimeout);
     hiddenAllItems();
 
-    let delay = 2000; // 기본 지연 시간 설정
+    let delay = 2000;
 
     if (slideNum === 0) {
       firstSlideItem.style.opacity = 1;
@@ -299,19 +284,18 @@ function crew_5_Slide() {
     } else if (slideNum === 1) {
       secondSlideItem.style.opacity = 1;
       if (secondSlideItem.tagName === "VIDEO") {
-        setupVideoEndListener(secondSlideItem); // 비디오에 대한 종료 이벤트 리스너 설정
+        setupVideoEndListener(secondSlideItem);
         secondSlideItem.play();
-        console.log("비디오 시작!");
-        return; // 비디오가 재생되는 동안 다음 슬라이드로 자동으로 넘어가지 않도록 합니다.
+
+        return;
       } else {
         slideNum++;
       }
     } else if (slideNum === 2) {
       thirdSlideItem.style.opacity = 1;
-      slideNum = 0; // 마지막 슬라이드 이후 첫 번째 슬라이드로 돌아갑니다.
+      slideNum = 0;
     }
 
-    // 다음 슬라이드로 넘어가기 전에 설정한 지연 시간 후에 playSlide 함수를 다시 호출합니다.
     slideTimeout = setTimeout(playSlide, delay);
   }
 
@@ -333,21 +317,19 @@ function crew_6_Slide() {
   }
 
   function setupVideoEndListener(videoElement) {
-    // 비디오 재생이 끝나면 호출될 함수를 한 번만 등록합니다.
     videoElement.onended =
       videoElement.onended ||
       (() => {
-        console.log("비디오 끝!");
         slideNum++;
-        playSlide(); // 비디오 재생이 끝나면 다음 슬라이드로 넘어갑니다.
+        playSlide();
       });
   }
 
   function playSlide() {
-    clearTimeout(slideTimeout); // 이전에 설정된 타이머가 있으면 취소합니다.
+    clearTimeout(slideTimeout);
     hiddenAllItems();
 
-    let delay = 2000; // 기본 지연 시간 설정
+    let delay = 2000;
 
     if (slideNum === 0) {
       firstSlideItem.style.opacity = 1;
@@ -355,27 +337,23 @@ function crew_6_Slide() {
     } else if (slideNum === 1) {
       secondSlideItem.style.opacity = 1;
       if (secondSlideItem.tagName === "VIDEO") {
-        setupVideoEndListener(secondSlideItem); // 비디오에 대한 종료 이벤트 리스너 설정
+        setupVideoEndListener(secondSlideItem);
         secondSlideItem.play();
-        console.log("비디오 시작!");
-        return; // 비디오가 재생되는 동안 다음 슬라이드로 자동으로 넘어가지 않도록 합니다.
+
+        return;
       } else {
         slideNum++;
       }
     } else if (slideNum === 2) {
       thirdSlideItem.style.opacity = 1;
-      slideNum = 0; // 마지막 슬라이드 이후 첫 번째 슬라이드로 돌아갑니다.
+      slideNum = 0;
     }
 
-    // 다음 슬라이드로 넘어가기 전에 설정한 지연 시간 후에 playSlide 함수를 다시 호출합니다.
     slideTimeout = setTimeout(playSlide, delay);
   }
 
   playSlide(); // 슬라이드쇼 시작
 }
-
-
-
 
 crew_1_Slide();
 crew_2_Slide();
